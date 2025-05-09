@@ -1,0 +1,320 @@
+/* Resetamos los estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Definimos el color de fondo del body */
+body {
+    background-color: #111;
+    color: #fff;
+}
+
+/* Definimos los parametros de la clase header  */
+header {
+    background-color: #000;
+    padding: 40px 0;
+    position: fixed; /* Cambiamos a fixed para que quede fijo en la parte superior */
+    top: 0;
+    z-index: 100;
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    box-shadow: 0 2px 5px rgba(169, 169, 0, 0.5); /* Agrega una sombra para destacar el nav */
+}
+
+main{
+    padding-top: 150px;
+}
+
+/* Definimos los parametros de la clase nav-contenedor  */
+.nav-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Pac-Man-Logo{
+    vertical-align: middle;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFFF00;
+}
+
+.logo span {
+    color: #FF0000;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    font-size: 18px;;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFFF00;
+    border-bottom: 2px solid #FFFF00;
+}
+
+.btn{
+    border:solid 2px #FFFF00;
+    color:#000;
+    background-color: #FFFF00;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.btn:hover{
+    box-shadow: 0 0 10px #FFFF00, 0 0 10px #FFFF00, 0 0 20px #FFFF00; /* Efecto de resplandor */
+    color: #111;
+}
+
+/* Sección del inicio */
+.inicio {
+    padding: 70px 50px;
+    background-color: #111;
+    border: solid 2px #FFFF00;
+    border-radius: 30px;
+    margin: 50px; /* Uniformamos el margen entre secciones */
+}
+
+.inicio-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.inicio-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #FFFF00;
+}
+
+.inicio-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.inicio-img {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #000;
+}
+
+.inicio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que ocupe todo el contenedor sin deformarse */
+}
+
+.inicio:hover{
+    box-shadow: 0 0 10px #FFFF00, 0 0 20px #FFFF00, 0 0 30px #FFFF00; /* Efecto de resplandor */
+    transition: all 0.3s ease-in-out;
+}
+
+.inicio a{
+    text-decoration: none;
+}
+
+.caracteristicas{
+    padding: 70px 50px;
+    background-color: #111;
+    border: solid 2px #FFFF00;
+    border-radius: 30px;
+    margin: 50px; /* Uniformamos el margen entre secciones */
+}
+
+.caracteristicas:hover{
+    box-shadow: 0 0 10px #FFFF00, 0 0 20px #FFFF00, 0 0 30px #FFFF00; /* Efecto de resplandor */
+    transition: all 0.3s ease-in-out;
+}
+
+.container h2{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #FFFF00;
+}
+
+.container h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #FFFF00;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);/* Define una cuadrícula con 3 columnas de igual tamaño utilizando la fracción (1fr)*/
+    gap: 30px;
+}
+
+.card {
+    background-color: #333;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-10px);    /* Aplicamos una transformación al elemento, moviéndolo 10 píxeles hacia arriba en el eje y */
+}
+
+.card-icono {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #FFFF00;
+}
+
+.card-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #FFFF00;
+}
+
+.card-1:hover{
+    box-shadow: 0 0 10px #1e00ff, 0 0 20px #1e00ff, 0 0 30px #1e00ff; /* Efecto de resplandor */
+    transition: all 0.3s ease-in-out;
+}
+
+.card-2:hover{
+    box-shadow: 0 0 10px #FFFF00, 0 0 20px #FFFF00, 0 0 30px #FFFF00; /* Efecto de resplandor */
+    transition: all 0.3s ease-in-out;
+}
+
+.card-3:hover{
+    box-shadow: 0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 30px #FF0000; /* Efecto de resplandor */
+    transition: all 0.3s ease-in-out;
+}
+
+.contacto{
+    padding: 70px 50px;
+    background-color: #111;
+    border: solid 2px #FFFF00;
+    border-radius: 30px;
+    margin: 50px; /* Uniformamos el margen entre secciones */
+    align-items: center;
+    padding: 80px 0;
+    background-color: #111;
+}
+
+.contacto:hover{
+    box-shadow: 0 0 10px #FFFF00, 0 0 20px #FFFF00, 0 0 30px #FFFF00; /* Efecto de resplandor */
+    transition: all 0.3s ease-in-out;
+}
+
+.contacto h2{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #FFFF00;
+}
+
+.contacto p{
+    text-align: center;
+}
+
+.contacto-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #222;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Ajustes finales para mejorar el desplazamiento al hacer clic en los enlaces del nav */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px; /* Compensa la altura del header fijo para evitar que tape las secciones */
+}
+
+/* Estilos para el footer */
+/* Estilos para el footer */
+.footer {
+    background-color: #000;
+    padding: 30px 50px;
+    border-top: 2px solid #FFFF00;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-contenido p {
+    color: #FFFF00;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-redes a {
+    color: #FFFF00;
+    margin-left: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-redes a:hover {
+    color: #fff;
+}
+
